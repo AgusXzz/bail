@@ -13689,176 +13689,54 @@ export namespace proto {
 
         /** Properties of a HistorySyncConfig. */
         interface IHistorySyncConfig {
-
-            /** HistorySyncConfig fullSyncDaysLimit */
             fullSyncDaysLimit?: (number|null);
-
-            /** HistorySyncConfig fullSyncSizeMbLimit */
             fullSyncSizeMbLimit?: (number|null);
-
-            /** HistorySyncConfig storageQuotaMb */
             storageQuotaMb?: (number|null);
-
-            /** HistorySyncConfig inlineInitialPayloadInE2EeMsg */
             inlineInitialPayloadInE2EeMsg?: (boolean|null);
-
-            /** HistorySyncConfig recentSyncDaysLimit */
             recentSyncDaysLimit?: (number|null);
-
-            /** HistorySyncConfig supportCallLogHistory */
             supportCallLogHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportBotUserAgentChatHistory */
             supportBotUserAgentChatHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportCagReactionsAndPolls */
             supportCagReactionsAndPolls?: (boolean|null);
-
-            /** HistorySyncConfig supportBizHostedMsg */
             supportBizHostedMsg?: (boolean|null);
-
-            /** HistorySyncConfig supportRecentSyncChunkMessageCountTuning */
             supportRecentSyncChunkMessageCountTuning?: (boolean|null);
-
-            /** HistorySyncConfig supportHostedGroupMsg */
             supportHostedGroupMsg?: (boolean|null);
-
-            /** HistorySyncConfig supportFbidBotChatHistory */
             supportFbidBotChatHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportAddOnHistorySyncMigration */
             supportAddOnHistorySyncMigration?: (boolean|null);
-
-            /** HistorySyncConfig supportMessageAssociation */
             supportMessageAssociation?: (boolean|null);
+            supportGroupHistory?: (boolean|null);
+            onDemandReady?: (boolean|null);
+            supportGuestChat?: (boolean|null);
+            completeOnDemandReady?: (boolean|null);
+            thumbnailSyncDaysLimit?: (number|null);
         }
 
-        /** Represents a HistorySyncConfig. */
         class HistorySyncConfig implements IHistorySyncConfig {
-
-            /**
-             * Constructs a new HistorySyncConfig.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.DeviceProps.IHistorySyncConfig);
-
-            /** HistorySyncConfig fullSyncDaysLimit. */
+            constructor(p?: proto.DeviceProps.IHistorySyncConfig);
             public fullSyncDaysLimit?: (number|null);
-
-            /** HistorySyncConfig fullSyncSizeMbLimit. */
             public fullSyncSizeMbLimit?: (number|null);
-
-            /** HistorySyncConfig storageQuotaMb. */
             public storageQuotaMb?: (number|null);
-
-            /** HistorySyncConfig inlineInitialPayloadInE2EeMsg. */
             public inlineInitialPayloadInE2EeMsg?: (boolean|null);
-
-            /** HistorySyncConfig recentSyncDaysLimit. */
             public recentSyncDaysLimit?: (number|null);
-
-            /** HistorySyncConfig supportCallLogHistory. */
             public supportCallLogHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportBotUserAgentChatHistory. */
             public supportBotUserAgentChatHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportCagReactionsAndPolls. */
             public supportCagReactionsAndPolls?: (boolean|null);
-
-            /** HistorySyncConfig supportBizHostedMsg. */
             public supportBizHostedMsg?: (boolean|null);
-
-            /** HistorySyncConfig supportRecentSyncChunkMessageCountTuning. */
             public supportRecentSyncChunkMessageCountTuning?: (boolean|null);
-
-            /** HistorySyncConfig supportHostedGroupMsg. */
             public supportHostedGroupMsg?: (boolean|null);
-
-            /** HistorySyncConfig supportFbidBotChatHistory. */
             public supportFbidBotChatHistory?: (boolean|null);
-
-            /** HistorySyncConfig supportAddOnHistorySyncMigration. */
             public supportAddOnHistorySyncMigration?: (boolean|null);
-
-            /** HistorySyncConfig supportMessageAssociation. */
             public supportMessageAssociation?: (boolean|null);
-
-            /**
-             * Creates a new HistorySyncConfig instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns HistorySyncConfig instance
-             */
+            public supportGroupHistory?: (boolean|null);
+            public onDemandReady?: (boolean|null);
+            public supportGuestChat?: (boolean|null);
+            public completeOnDemandReady?: (boolean|null);
+            public thumbnailSyncDaysLimit?: (number|null);
             public static create(properties?: proto.DeviceProps.IHistorySyncConfig): proto.DeviceProps.HistorySyncConfig;
-
-            /**
-             * Encodes the specified HistorySyncConfig message. Does not implicitly {@link proto.DeviceProps.HistorySyncConfig.verify|verify} messages.
-             * @param message HistorySyncConfig message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.DeviceProps.IHistorySyncConfig, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified HistorySyncConfig message, length delimited. Does not implicitly {@link proto.DeviceProps.HistorySyncConfig.verify|verify} messages.
-             * @param message HistorySyncConfig message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.DeviceProps.IHistorySyncConfig, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a HistorySyncConfig message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns HistorySyncConfig
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceProps.HistorySyncConfig;
-
-            /**
-             * Decodes a HistorySyncConfig message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns HistorySyncConfig
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceProps.HistorySyncConfig;
-
-            /**
-             * Verifies a HistorySyncConfig message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a HistorySyncConfig message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns HistorySyncConfig
-             */
-            public static fromObject(object: { [k: string]: any }): proto.DeviceProps.HistorySyncConfig;
-
-            /**
-             * Creates a plain object from a HistorySyncConfig message. Also converts values to other types if specified.
-             * @param message HistorySyncConfig
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.DeviceProps.HistorySyncConfig, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this HistorySyncConfig to JSON.
-             * @returns JSON object
-             */
+            public static encode(m: proto.DeviceProps.IHistorySyncConfig, w?: $protobuf.Writer): $protobuf.Writer;
+            public static decode(r: ($protobuf.Reader|Uint8Array), l?: number): proto.DeviceProps.HistorySyncConfig;
+            public static fromObject(d: { [k: string]: any }): proto.DeviceProps.HistorySyncConfig;
+            public static toObject(m: proto.DeviceProps.HistorySyncConfig, o?: $protobuf.IConversionOptions): { [k: string]: any };
             public toJSON(): { [k: string]: any };
-
-            /**
-             * Gets the default type url for HistorySyncConfig
-             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
-             * @returns The default type url
-             */
             public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 

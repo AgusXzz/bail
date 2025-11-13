@@ -462,9 +462,15 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 						devices.push(...additionalDevices)
 					}
 
-					const patched = await patchMessageBeforeSending(message)
+					if (groupData?.ephemeralDuration && groupData.ephemeralDuration > 0) {
+							additionalAttributes = {
+							...additionalAttributes,
+							expiration: groupData.ephemeralDuration.toString()
+						}
+					}
 
-					if(Array.isArray(patched)) {
+					const patched = await patchMessageBeforeSending(message)
+						if (Array.isArray(patched)) {
 						throw new Boom('Per-jid patching is not supported in groups')
 					}
 
